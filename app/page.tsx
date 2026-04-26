@@ -1,7 +1,6 @@
 import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 import { Link2, BarChart3, Shield, Zap, LayoutDashboard, Globe } from 'lucide-react';
-import { SignInButtonComponent } from '@/components/sign-in-button';
 import { SignUpButtonComponent } from '@/components/sign-up-button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
@@ -65,10 +64,6 @@ export default async function HomePage() {
           Turn any long URL into a clean, memorable short link. Track clicks,
           manage your links, and share with confidence — all from one place.
         </p>
-        <div className="flex gap-3 justify-center">
-          <SignUpButtonComponent />
-          <SignInButtonComponent />
-        </div>
       </section>
 
       {/* Features */}
