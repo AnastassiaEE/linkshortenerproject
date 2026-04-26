@@ -114,10 +114,15 @@ Sign-in and sign-up must always launch as modals, never as full-page redirects.
 ```tsx
 // ✅ app/layout.tsx
 import { ClerkProvider } from '@clerk/nextjs';
+import { shadcn } from '@clerk/ui/themes';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        theme: shadcn,
+      }}
+    >
       <html lang="en">
         <body>{children}</body>
       </html>
@@ -125,6 +130,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   );
 }
 ```
+
+**Note**: The `shadcn` theme from `@clerk/ui/themes` ensures all Clerk UI components (modals, user button, etc.) match the shadcn/ui design system used throughout the application.
 
 ### Modal Sign-In Button
 
