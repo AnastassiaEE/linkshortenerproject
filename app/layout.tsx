@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ClerkProvider, Show, UserButton } from '@clerk/nextjs';
+import { shadcn } from '@clerk/ui/themes';
 import { SignInButtonComponent } from '@/components/sign-in-button';
 import { SignUpButtonComponent } from '@/components/sign-up-button';
 import './globals.css';
@@ -31,7 +32,11 @@ export default function RootLayout({
       className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <ClerkProvider>
+        <ClerkProvider
+          appearance={{
+            theme: shadcn,
+          }}
+        >
           <header className="border-b">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
               <h1 className="text-xl font-semibold">Link Shortener</h1>
