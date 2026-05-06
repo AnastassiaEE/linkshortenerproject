@@ -1,3 +1,7 @@
+---
+description: Read this before implementing authentication to understand the required patterns and best practices for using Clerk in this project.
+---
+
 # Authentication Patterns - Clerk Integration
 
 ## Overview

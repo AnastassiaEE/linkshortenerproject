@@ -1,3 +1,7 @@
+---
+description: Read this before implementing UI components to understand the required patterns and best practices for using shadcn/ui in this project.
+---
+
 # UI Components - shadcn/ui Standards
 
 ## Overview

@@ -4,27 +4,6 @@
 
 This is a Next.js 16 link shortener application with **strict coding standards**. All LLM agents working on this project MUST follow the comprehensive guidelines in the `/docs` directory.
 
-## ⚠️ CRITICAL: Read the Documentation First ⚠️
-
-**BLOCKING REQUIREMENT**: Before writing ANY code or making ANY changes, you MUST read the relevant documentation files in the `/docs` directory. This is NOT optional.
-
-**Required Reading**:
-
-- **[Authentication Patterns](./docs/authentication.md)** - Clerk integration, protected routes, modals
-- **[UI Components](./docs/ui-components.md)** - shadcn/ui standards, component usage, styling guidelines
-
-**DO NOT SKIP THIS STEP**. These files contain project-specific patterns, conventions, and anti-patterns that differ from standard Next.js practices. Failing to read them will result in incorrect code that violates project standards.
-
-### Why This Matters
-
-1. This project uses Next.js 16 with breaking changes from previous versions
-2. Clerk authentication has specific patterns that must be followed
-3. UI components must use shadcn/ui, not custom implementations
-4. TypeScript strict mode requires specific type handling
-5. Your training data is likely outdated for these specific patterns
-
-**Read the docs FIRST, code SECOND.**
-
 ## Quick Reference
 
 ### Technology Stack
@@ -63,11 +42,10 @@ This is a Next.js 16 link shortener application with **strict coding standards**
 
 **⚠️ STOP! Complete these steps IN ORDER before writing any code:**
 
-1. **🔴 MUST READ: Open and read the relevant `/docs` file(s)** - This is mandatory, not optional
-2. **Check existing code** for similar patterns in the codebase
-3. **Follow TypeScript strict mode** (no `any`, proper types)
-4. **Test authentication** if touching protected routes
-5. **Validate user input** before database operations
+1. **Check existing code** for similar patterns in the codebase
+2. **Follow TypeScript strict mode** (no `any`, proper types)
+3. **Test authentication** if touching protected routes
+4. **Validate user input** before database operations
 
 **If you skip step 1, your code WILL be wrong.** The documentation contains project-specific requirements that override general Next.js patterns.
 
@@ -85,10 +63,9 @@ Each documentation file contains:
 
 If you're unsure about a pattern:
 
-1. Check the relevant `/docs` file first
-2. Look for similar code in the project
-3. Follow the "do's" and avoid the "don'ts"
-4. When in doubt, ask for clarification
+1. Look for similar code in the project
+2. Follow the "do's" and avoid the "don'ts"
+3. When in doubt, ask for clarification
 
 **Remember**: This is Next.js 16 with breaking changes. Your training data may be outdated. Always verify against these docs.
 
